@@ -4,6 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <meta name="description" content="Fullstack Web Developer, Android developer and Game Developer/Graphics programmer.. We make your projects with considerable prices.">
+    <meta name="keywords" content="Fullstack, Web, HTML5, CSS3, JS, JavaScript, PHP, backend, frontend, nodejs, reactjs, wordpress, static, dynamic, responsive, adaptive, 
+    Android, JAVA, Xamarin, C#, C++, native, hybrid, 
+    Game, Games, retro, design, level, content, creation, programming, unity, unity3d, unreal, engine, cross, platform, hlsl, glsl, directx, direct3d, 
+    opengl, maker, studio, PC, XBOX, PS">
+    <meta name="author" content="Mohamed Touiti">
+    <meta name="copyright" content="Mohamed Touiti">
+    <meta name="theme-color" content="#1e036d">
+    <meta name="msapplication-navbutton-color" content="#1e036d" /> <!-- Windows Phone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1e036d" /> <!-- iOS Safari -->
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Mohamed Touiti">
+    <meta property="og:description" content="Fullstack Web Developer, Android developer and Game Developer/Graphics programmer.. We make your projects with considerable prices.">
+    <meta property="og:image" content="/images/retro2.jpg">
+    <meta property="og:url" content="PERMALINK" />
+    <meta property="og:site_name" content="MOHAMED TOUITI" />
+
+    <meta name="twitter:title" content="Mohamed Touiti">
+    <meta name="twitter:description" content="Fullstack Web Developer, Android developer and Game Developer/Graphics programmer.. We make your projects with considerable prices.">
+    <meta name="twitter:image" content="/images/retro2.jpg">
+    <meta name="twitter:site" content="@mohamed6000_1">
+    <meta name="twitter:creator" content="@mohamed6000_1">
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/anim/socials.css">
@@ -28,28 +53,33 @@
                     </div>
                     <div class="col d-flex justify-content-end">
                         <div class="b-social youtube">
-                            <a href="#" target="_blank" title="YouTube" aria-label="YouTube">
+                            <a href="https://www.youtube.com/channel/UC4GIEs6O6pxdd8B9bbXUrBQ" target="_blank" title="YouTube" aria-label="YouTube">
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
                         </div>
                         <div class="b-social instagram">
-                            <a href="#" target="_blank" title="Instagram" aria-label="Instagram">
+                            <a href="https://www.instagram.com/mohamed.touiti/" target="_blank" title="Instagram" aria-label="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
                         <div class="b-social twitter">
-                            <a href="#" target="_blank" title="Twitter" aria-label="Twitter">
+                            <a href="https://twitter.com/mohamed6000_1" target="_blank" title="Twitter" aria-label="Twitter">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                         <div class="b-social facebook">
-                            <a href="#" target="_blank" title="Facebook" aria-label="Facebook">
+                            <a href="https://www.facebook.com/mohamed.touiti.77" target="_blank" title="Facebook" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
                         </div>
                         <div class="b-social linkedin">
-                            <a href="#" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/mohamed-touiti-00/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
                                 <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="b-social email">
+                            <a href="mailto:mohamed_touiti@hotmail.com" target="_blank" title="E-mail" aria-label="E-mail">
+                                <i class="fa-solid fa-envelope"></i>
                             </a>
                         </div>
                     </div>
@@ -88,7 +118,7 @@
             <div class="title">
                 <h1>std::cout << "Welcome!";</h1>
                 <p>/* I make games and provide services for Web development! */</p>
-                <button class="button-info" role="button">Click for fun</button>
+                <button class="button-info" id="dnt-touch-btn" role="button">Do not touch!</button>
             </div>
         </div>
     </div>
@@ -100,7 +130,7 @@
                     <p>We use cookies to enable an improved browsing experience. By using this site, you accept our use of cookies.</p>
                 </div>
                 <div class="col-md-2 d-grid gap-2">
-                    <button type="button" class="btn btn-special btn-five rounded-pill" data-bs-dismiss="alert" aria-label="Close">Accept</button>
+                    <button type="button" onclick="SetCookie('acc', 'true', '30')" class="btn btn-special btn-five rounded-pill" data-bs-dismiss="alert" aria-label="Close">Accept</button>
                 </div>
             </div>
         </div>
@@ -230,16 +260,16 @@
                     <h3>Social Media</h3>
 
                     <div class="social-media-ico">
-                        <a href="#" target="_blank">
+                        <a href="https://twitter.com/mohamed6000_1" target="_blank">
                             <div class="twitter-hover social-slide"></div>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://www.facebook.com/mohamed.touiti.77" target="_blank">
                             <div class="facebook-hover social-slide"></div>
                         </a>
                         <a href="#" target="_blank">
                             <div class="google-hover social-slide"></div>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://www.instagram.com/mohamed.touiti/" target="_blank">
                             <div class="instagram-hover social-slide"></div>
                         </a>
                     </div>
@@ -250,6 +280,8 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/page.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/anims.js"></script>
 </body>
 </body>
 </html>
