@@ -23,7 +23,7 @@ const addRoutes = () => {
         console.log("Route is ", params.Title, params.pagename);
     }, "page");*/
 
-    $NB.addRoute(["/", "/:pagename"], (params) => {
+    $NB.addRoute(["https://mohamed6000.github.io/mtouiti/blog/", "https://mohamed6000.github.io/mtouiti/blog/:pagename"], (params) => {
         if (params.pagename === undefined) {
             document.title = "Feed";
             app.innerHTML = ``;
@@ -43,7 +43,7 @@ const addRoutes = () => {
         }
     }, "page");
 
-    $NB.addRoute("/:category/:id", async (params) => {
+    $NB.addRoute("https://mohamed6000.github.io/mtouiti/blog/:category/:id", async (params) => {
         console.log("Route is ", params.Title, params.category, params.id);
         document.title = "Post";
         app.innerHTML = ``;
